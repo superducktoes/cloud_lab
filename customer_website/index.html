@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script>
+    function getInputValue() {
+
+      // Selecting the input element and get its value 
+      var inputVal = document.getElementById("myInput").value;
+
+
+      const url = "https://raw.githubusercontent.com/superducktoes/cloud_lab/main/sample_data/customer_databse_redacted.json";
+
+      fetch(url)
+        .then(res => res.json())
+        .then((out) => {
+
+          for(let k in out) {
+            //console.log(out[k]["name"]);
+
+            if((out[k]["name"]).toLowerCase().includes(inputVal)) {
+              document.getElementById("customerData").innerHTML = JSON.stringify(out[k]);
+              break;
+            } else {
+              document.getElementById("customerData").innerHTML = "Not Found";
+            }
+            if(inputVal == "*"){
+              document.getElementById("customerData").innerHTML = JSON.stringify(out);
+            } 
+          }
+
+        }).catch(err => console.error(err));
+
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #e9e9e9;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color: #2196F3;
+      color: white;
+    }
+
+    .topnav .search-container {
+      float: right;
+    }
+
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 17px;
+      border: none;
+    }
+
+    .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .topnav .search-container button:hover {
+      background: #ccc;
+    }
+
+    @media screen and (max-width: 600px) {
+      .topnav .search-container {
+        float: none;
+      }
+
+      .topnav a,
+      .topnav input[type=text],
+      .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+      }
+
+      .topnav input[type=text] {
+        border: 1px solid #ccc;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+  </div>
+
+  <div style="padding-left:16px">
+    <h2>Customer Record Search</h2>
+    <p>Search customer records here</p>
+    <input type="text" placeholder="Search" id="myInput">
+    <button type="button" onclick="getInputValue();">Search</button>
+    <p id="customerData"></p>
+  </div>
+
+</body>
+
+</html>
