@@ -1,52 +1,52 @@
 [
     {
-	"name": "Virginia M. Blake",
-    "phone": "320-360-2857",
-    "email": "VirginiaMBlake@dayrep.com ",
-},
-{
-	"name": "Gerald M. Green",
-    "phone": "215-250-4323",
-    "email": "GeraldMGreen@armyspy.com ",
-},
-{
-	"name": "William J. Bolding",
-    "phone": "916-312-3300",
-    "email": "WilliamJBolding@armyspy.com ",
-},
-{
-	"name": "Marie C. McFadden",
-    "phone": "248-790-7836",
-    "email": "MarieCMcFadden@rhyta.com ",
-},
-{
-	"name": "Elizabeth O. Skipworth",
-    "phone": "601-368-5439",
-    "email": "ElizabethOSkipworth@dayrep.com ",
-},
-{
-	"name": "Jason R. Horton",
-    "phone": "505-481-3449",
-    "email": "JasonRHorton@jourrapide.com ",
-},
-{
-	"name": "Mark R. Norris",
-    "phone": "860-383-0952",
-    "email": "MarkRNorris@rhyta.com ",
-},
-{
-	"name": "Patricia A. Damato",
-    "phone": "203-498-1352",
-    "email": "PatriciaADamato@teleworm.us",
-},
-{
-	"name": "Hattie A. Schroyer",
-    "phone": "630-530-6441",
-    "email": "HattieASchroyer@rhyta.com",
-},
-{
-	"name": "Crystal R. Purington",
-    "phone": "815-393-3934",
-    "email": "CrystalRPurington@dayrep.com",
-}
-]
+      "name": "Virginia M. Blake",
+      "phone": "320-360-2857",
+      "email": "VirginiaMBlake@dayrep.com "
+    },
+    {
+      "name": "Gerald M. Green",
+      "phone": "215-250-4323",
+      "email": "GeraldMGreen@armyspy.com "
+    },
+    {
+      "name": "William J. Bolding",
+      "phone": "916-312-3300",
+      "email": "WilliamJBolding@armyspy.com "
+    },
+    {
+      "name": "Marie C. McFadden",
+      "phone": "248-790-7836",
+      "email": "MarieCMcFadden@rhyta.com "
+    },
+    {
+      "name": "Elizabeth O. Skipworth",
+      "phone": "601-368-5439",
+      "email": "ElizabethOSkipworth@dayrep.com "
+    },
+    {
+      "name": "Jason R. Horton",
+      "phone": "505-481-3449",
+      "email": "JasonRHorton@jourrapide.com "
+    },
+    {
+      "name": "Mark R. Norris",
+      "phone": "860-383-0952",
+      "email": "MarkRNorris@rhyta.com "
+    },
+    {
+      "name": "Patricia A. Damato",
+      "phone": "203-498-1352",
+      "email": "PatriciaADamato@teleworm.us"
+    },
+    {
+      "name": "Hattie A. Schroyer",
+      "phone": "630-530-6441",
+      "email": "HattieASchroyer@rhyta.com"
+    },
+    {
+      "name": "Crystal R. Purington",
+      "phone": "815-393-3934",
+      "email": "CrystalRPurington@dayrep.com"
+    }
+  ]
